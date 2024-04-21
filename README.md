@@ -1,4 +1,3 @@
-
 <h1 align="center">
 <!--   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
@@ -38,14 +37,13 @@
 
 ## Key Features
 
-* Using golang and libraries gin for the api
-* Using jwt for simple login and register
+- Using golang and libraries gin for the api
+- Using jwt for simple login and register
   - to accessing itemNFT API must login to get auth token.
-* Using mongodb for databases
-* Implement some API that required in modules
-* Including Testing schenario
-* Using docker container
-
+- Using mongodb for databases
+- Implement some API that required in modules
+- Including Testing schenario
+- Using docker container
 
 ## How To Use
 
@@ -64,11 +62,23 @@ $ docker-compose up --build
 # Checking API using Postman and enjoy :)
 ```
 
+To run unit test, need to run this following steps.
+
+```bash
+# Go into the repository
+$ cd smartm2m
+
+# Run go mod tidy to get dependencies
+$ go mod tidy
+
+# Run Unit testing for models dependencies
+$ go test -v ./src/models
+```
+
 <!--
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 -->
-
 
 ## Credits
 
@@ -79,7 +89,6 @@ This software uses the following open source packages:
 - [JWT Libraries](github.com/dgrijalva/jwt-go)
 - [Go Gin Framework](github.com/gin-gonic/gin)
 
-
 ## License
 
 MIT
@@ -87,4 +96,3 @@ MIT
 ---
 
 > GitHub [@hifisultonauliya](https://github.com/hifisultonauliya)
-      
